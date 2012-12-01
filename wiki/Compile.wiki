@@ -13,7 +13,7 @@ $sudo apt-get install libnotify-bin libnotify-dev*
 Sau khi chuyển vào thư mục source code.
 Có thể compile bằng 1 trong 2 lệnh sau
  + Để debug các xử lý qua terminal
-   *$gcc -g -o NotifyWord NotifyWord.c `pkg-config --cflags --libs libnotify` -D _DEBUG_MACRO_*
+   * $gcc -g -o NotifyWord NotifyWord.c `pkg-config --cflags --libs libnotify` -D _DEBUG_MACRO_*
  
  + Không sử dụng debug xử lý nữa
   *$gcc -g -o NotifyWord NotifyWord.c `pkg-config --cflags --libs libnotify`*
