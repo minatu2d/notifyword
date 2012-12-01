@@ -1,4 +1,4 @@
-#summary Các compile chương trình
+#summary Cách compile chương trình
 
 = Biên dịch chương trình=
 ==Thư viện yêu cầu==
