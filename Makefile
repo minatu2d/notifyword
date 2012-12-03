@@ -27,12 +27,12 @@ $(PROG): $(OBJS)
 	$(CC) -g -o $(PROG) $(OBJS) $(LIBS)
 
 # Top level : debug
-debug:	$(OBJS)	
-	$(CC) -g -o $(PROG) $(OBJS) $(LIBS)
+debug:	NotifyWord.c
+	$(CC) -g -o $(PROG) NotifyWord.c $(LIBS) $(CFLAGS) -D _DEBUG_MACRO_
 
 # Create every object file
 NotifyWord.o: NotifyWord.c
-	$(CC) -c NotifyWord.c $(CFLAGS) -D _DEBUG_MACRO_
+	$(CC) -c NotifyWord.c $(CFLAGS)
 
 # Top level : clean
 clean:
