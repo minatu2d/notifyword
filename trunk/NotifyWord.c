@@ -218,18 +218,24 @@ int readNewWord(FILE* fi, char* word, char* mean)
     {
       offsetWidth = strlen(line); 
       _DEBUG("Line : %s\n",line);
-      /* Seperator as one byte character */
-      delimterStr = strchr(line , WORD_MEAN_SEPERATOR); /* Find position which start width eperator character*/
-      /* Seperator as multiple bytes character, in this case : Japanese*/
+      /* Check seperator part */
+
+      /* 2012-12-02_10:00:00 modified : Fix character loss in word */
+      
+      /* Fisrt case, seperator as one byte character */
+      delimterStr = strchr(line , WORD_MEAN_SEPERATOR); /* Find position which start width eperator character */
+      
+      /* Second case, seperator as multiple bytes character, in this case : Japanese */
       if (NULL == delimterStr)
 	{
 	  delimterStr = strstr(line, SHIFT_JS_WORD_MEAN_SEPERATOR_STR);
 	  if (delimterStr != NULL)
 	    {
+	      *delimterStr = '\0';
 	      delimterStr += strlen(SHIFT_JS_WORD_MEAN_SEPERATOR_STR);
 	    }
 	}
-      /* After*/
+      /* 2012-12-02_10:00:00 modified : finished */
       if (delimterStr != NULL)
 	{
 	  *delimterStr = '\0'; /* Consider first part of line is word */
