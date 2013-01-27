@@ -11,7 +11,7 @@
 #include "debugmacro.h"
 
 /* Define a delay time between 2 word notifications in seconds*/
-#define DELAY_NOTIFY_WORD 5*60
+#define DELAY_NOTIFY_WORD 3*60
 
 /* Application name */
 #define APP_NAME "NotifyWord"
@@ -28,6 +28,8 @@
 /* Fisrt start-up app notification content */
 #define FIRST_TIME_NOTIFY_CONTENT "New mean here"
 
+/* Resource absolute directory (not include slash at the end) */
+#define RESOURCE_ABSOLUTE_PATH "/home/minatu/Program/NotifyWord"
 /* New word file name */
 /* This file is in following format:*/
 /*
@@ -39,13 +41,16 @@
 #define LOG_FILE "notifylog.txt"
 
 /* The longest possible length for word */
-#define WORD_MAX_LENGTH 200
+#define WORD_MAX_LENGTH 500
 
 /* The longest possible length for mean */
-#define MEAN_MAX_LENGTH 700
+#define MEAN_MAX_LENGTH 1000
 
 /* The longest possible length for a line*/
 #define LINE_MAX_LENGTH (WORD_MAX_LENGTH + MEAN_MAX_LENGTH + 2)
+
+/* The longtest file path (absolute path) */
+#define FILE_ABSOLUTE_PATH_LENGTH 1000
 
 /* Seperator which is between word and mean */
 #define WORD_MEAN_SEPERATOR ':'
@@ -110,8 +115,13 @@ int main (int argc, char *argv[])
 	/* NotifyNotification object */
 	NotifyNotification *notification = NULL;
 	
+	/*String path string */
+	char file_absolute[FILE_ABSOLUTE_PATH_LENGTH];
+	memset(file_absolute, 0x00, sizeof(file_absolute));
+	sprintf(file_absolute,"%s/%s",RESOURCE_ABSOLUTE_PATH, WORD_FILE);
+	
 	/* Open word file */
-	if (NULL == (wordFile = fopen(WORD_FILE,"rt")))
+	if (NULL == (wordFile = fopen(file_absolute,"rt")))
 	{
 	  _DEBUG("%s","Error reading word file\n");
 	  return EXIT_FAILURE;
@@ -119,7 +129,7 @@ int main (int argc, char *argv[])
 	
 	/* If log file already was exist, load reading offset  */
 	if (NULL != (logFile = fopen(LOG_FILE,"rt")))
-	  {	    
+	  {
 	    wordOffset = loadWordOffset(logFile);
 	    _DEBUG("Word offset : %ld\n",wordOffset);
 	    closeLogFile(logFile);
@@ -142,12 +152,32 @@ int main (int argc, char *argv[])
 	    _DEBUG ("%s","Notify init Error.\n");
 	    return EXIT_FAILURE;
 	  }
-	
+/*FIXBUG : Compilation error with earlier version of libnotify : START*/
+#ifdef NOTIFY_CHECK_VERSION
+#if NOTIFY_CHECK_VERSION (0,7,0)
 	/* Create new NotifyNotification object  */
 	notification = notify_notification_new (
 						"New word here",      /* The title of  notification  */
 						"The mean is here",   /* The content of notification */
 						"stock_dialog-info"); /* Icon id */
+#else
+	/* Create new NotifyNotification object  */
+	notification = notify_notification_new (
+						"New word here",      /* The title of  notification  */
+						"The mean is here",   /* The content of notification */
+						"stock_dialog-info",  /* Icon id */
+						NULL);
+#endif
+#else
+		/* Create new NotifyNotification object  */
+	notification = notify_notification_new (
+						"New word here",      /* The title of  notification  */
+						"The mean is here",   /* The content of notification */
+						"stock_dialog-info",  /* Icon id */
+						NULL);
+#endif
+/*FIXBUG : Compilation error with earlier version of libnotify : END*/
+
 	notify_notification_set_timeout(notification,3000); /* Set timeout for notification (optional ) */
 	notify_notification_set_urgency (notification,NOTIFY_URGENCY_CRITICAL); /* Set urgency (optional) */
 	
@@ -163,6 +193,7 @@ int main (int argc, char *argv[])
 	  
 	  newOffsetWidth = readNewWord(wordFile,newWord, newMean); /* Read new word and new mean */
 	  wordOffset += newOffsetWidth; /* Plus newOffsetWidth to wordOffset */
+
 	  if (0 == newOffsetWidth) /* If nothing to read (newOffsetWidth = 0)*/
 	    { /* Jump to begining of word file */
 	      wordOffset = 0;
@@ -232,13 +263,13 @@ int readNewWord(FILE* fi, char* word, char* mean)
 	  if (delimterStr != NULL)
 	    {
 	      *delimterStr = '\0';
-	      delimterStr += strlen(SHIFT_JS_WORD_MEAN_SEPERATOR_STR);
+	      delimterStr += strlen(SHIFT_JS_WORD_MEAN_SEPERATOR_STR) - 1;
 	    }
 	}
       /* 2012-12-02_10:00:00 modified : finished */
       if (delimterStr != NULL)
 	{
-	  *delimterStr = '\0'; /* Consider first part of line is word */
+	  *delimterStr = '\0'; /* Consider the first part of line is word */
 	  strcpy(word ,line ); /* Save to new word*/
 	  strcpy(mean ,delimterStr + 1); /* Save to new mean */
 	}
