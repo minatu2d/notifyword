@@ -87,6 +87,18 @@ http://www3.nhk.or.jp/news/easy/k10010922481000/k10010922481000.html
 
 http://www3.nhk.or.jp/news/easy/k10010922491000/k10010922491000.html
 
-#### 23. Nhưng chú ý khi xảy ra mưa kéo dài
+#### 23. Những chú ý khi xảy ra mưa kéo dài
 
 http://www3.nhk.or.jp/news/easy/k10010922421000/k10010922421000.html
+
+#### 24. Đối với những trẻ em nghỉ học vì ốm thì cũng cần chữa cả tinh thần nữa
+
+http://www3.nhk.or.jp/news/easy/k10011350941000/k10011350941000.html
+
+#### 25. Người nước ngoài tăng lên ở 75% thành phố, thị trấn ở Nhật
+
+http://www3.nhk.or.jp/news/easy/k10011351441000/k10011351441000.html
+
+#### 26. Ở thị trấn Kyonan thuộc tỉnh Chiba, hoa loại hoa sakura tên Kawazuzakura đã nở rồi.
+
+http://www3.nhk.or.jp/news/easy/k10011351191000/k10011351191000.html
