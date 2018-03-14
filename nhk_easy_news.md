@@ -102,3 +102,24 @@ http://www3.nhk.or.jp/news/easy/k10011351441000/k10011351441000.html
 #### 26. Ở thị trấn Kyonan thuộc tỉnh Chiba, hoa loại hoa sakura tên Kawazuzakura đã nở rồi.
 
 http://www3.nhk.or.jp/news/easy/k10011351191000/k10011351191000.html
+
+#### 27. Ở Olympic Tokyo năm 2020 tới đây, người ta có kế hoạch sử dụng cả thuyền làm khách sạn
+
+http://www3.nhk.or.jp/news/easy/k10011352431000/k10011352431000.html
+
+#### 28. Ở khu vực, shinmoedake nằm giữa 2 tỉnh Kagoshima và Miyazaki vẫn tiếp tục phun trào
+
+http://www3.nhk.or.jp/news/easy/k10011355291000/k10011355291000.html
+
+#### 29. Triển lãm giới thiệu các công nghệ hữu ích cho các các hàng thiếu người làm
+
+http://www3.nhk.or.jp/news/easy/k10011353551000/k10011353551000.html
+
+#### 30. 11 nước trong đó có Nhật đã kí TPP
+
+http://www3.nhk.or.jp/news/easy/k10011356961000/k10011356961000.html
+
+#### 31. 7 năm sau thảm hoạ sóng thần ở miền đông Nhật bản, số người sống một mình bị chết tăng lên
+
+http://www3.nhk.or.jp/news/easy/k10011354531000/k10011354531000.html
+
