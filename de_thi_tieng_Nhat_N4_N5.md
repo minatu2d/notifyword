@@ -22,6 +22,14 @@ https://www.jlpt.jp/samples/sample2012/pdf/N5L.pdf
 - Câu hỏi 3 （問題3）（もんだい3） : https://www.jlpt.jp/samples/sample2012/mp3/N5Q3.mp3
 - Câu hỏi 4 （問題4）（もんだい4） : https://www.jlpt.jp/samples/sample2012/mp3/N5Q4.mp3
 
+### 5. Bảng đáp án（正答表）
+
+https://www.jlpt.jp/samples/sample2012/pdf/N4answer.pdf
+
+**File script nghe**
+
+https://www.jlpt.jp/samples/sample2012/pdf/N4script.pdf
+
 N4
 -------
 ### 1. Từ vựng（文字･語彙）（もじ・ごい）
@@ -45,3 +53,11 @@ https://www.jlpt.jp/samples/sample2012/pdf/N4L.pdf
 - Câu hỏi 2 （問題2）（もんだい2） : https://www.jlpt.jp/samples/sample2017/mp3/N4Q2.mp3
 - Câu hỏi 3 （問題3）（もんだい3） : https://www.jlpt.jp/samples/sample2012/mp3/N4Q3.mp3
 - Câu hỏi 4 （問題4）（もんだい4） : https://www.jlpt.jp/samples/sample2012/mp3/N4Q4.mp3
+
+### 5. Bảng đáp án（正答表）
+
+https://www.jlpt.jp/samples/sample2012/pdf/N5answer.pdf
+
+**File script nghe**
+
+https://www.jlpt.jp/samples/sample2012/pdf/N5script.pdf
