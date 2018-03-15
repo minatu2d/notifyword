@@ -130,3 +130,11 @@ http://www3.nhk.or.jp/news/easy/k10011361561000/k10011361561000.html
 #### 33. Luật mới được thông qua : tuổi trưởng thành sẽ là 18
 
 http://www3.nhk.or.jp/news/easy/k10011362621000/k10011362621000.html
+
+#### 34. Để dần số không trở nên ít dần, phải có kế hoạch cho người nước ngoài tiếp tục sống lâu dài
+
+http://www3.nhk.or.jp/news/easy/k10011363851000/k10011363851000.html
+
+#### 35. Môn thi đấu người trẻ muốn xem nhất tại Olympic Tokyo là bóng truyền
+
+http://www3.nhk.or.jp/news/easy/k10011363171000/k10011363171000.html
