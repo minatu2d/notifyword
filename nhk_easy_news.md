@@ -123,3 +123,10 @@ http://www3.nhk.or.jp/news/easy/k10011356961000/k10011356961000.html
 
 http://www3.nhk.or.jp/news/easy/k10011354531000/k10011354531000.html
 
+#### 32. Chiếc máy ảnh 95 tuổi của Đức được bán với giá tương đương 300 triệu yên
+
+http://www3.nhk.or.jp/news/easy/k10011361561000/k10011361561000.html
+
+#### 33. Luật mới được thông qua : tuổi trưởng thành sẽ là 18
+
+http://www3.nhk.or.jp/news/easy/k10011362621000/k10011362621000.html
