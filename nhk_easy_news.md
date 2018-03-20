@@ -138,3 +138,15 @@ http://www3.nhk.or.jp/news/easy/k10011363851000/k10011363851000.html
 #### 35. Môn thi đấu người trẻ muốn xem nhất tại Olympic Tokyo là bóng truyền
 
 http://www3.nhk.or.jp/news/easy/k10011363171000/k10011363171000.html
+
+#### 36. Những ngày ấm áp đang tiếp diễn, hoa sakura có thể nở sớm
+
+http://www3.nhk.or.jp/news/easy/k10011365101000/k10011365101000.html
+
+#### 37. Ở Tokyo, hoa sakura có thể nở trước 9 ngày so với mọi năm
+
+http://www3.nhk.or.jp/news/easy/k10011369081000/k10011369081000.html
+
+#### 38. Nhà nghiên cứu vũ trụ nổi tiếng, tiếng sĩ Hawking qua đời
+
+http://www3.nhk.or.jp/news/easy/k10011364661000/k10011364661000.html
